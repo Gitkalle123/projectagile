@@ -1,0 +1,6 @@
+11 Apr
+creating multiple files in single powershell command:
+mkdir filespdf
+1..9 | For Each-Object {
+    New-Item -Path C:\Trainings\11april\projectagil -Name ('fn_{0}.pdf' -f $_) -ItemType 'File'
+}
